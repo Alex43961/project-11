@@ -1,0 +1,101 @@
+@import"./variables.css";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+.header {
+	height: 100px;
+	background-color: var(--primary-gradient);
+	display: flex;
+}
+
+
+/* скрываем чекбокс */
+#menu__toggle {
+	opacity: 0;
+}
+
+/* стилизуем кнопку */
+.menu__btn {
+	display: flex;
+	/* используем flex для центрирования содержимого */
+	align-items: center;
+	/* центрируем содержимое кнопки */
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #616161;
+}
+
+.menu__btn>span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn>span::after {
+	content: '';
+	top: 8px;
+}
+
+.logo {
+	width: 40px;
+}
+
+.title {
+	font-size: var(--font-size-L);
+	text-transform: uppercase;
+}
+
+.catalog-btn {
+	width: 80px;
+	height: 30px;
+}
+
+.search-icon {
+	width: 20px;
+
+}
+
+.search__header {
+	width: 600px;
+	height: 30px;
+}
+
+.search-button {
+	width: 80px;
+	height: 30px;
+}
+
+.bascket {
+	width: 20px;
+}
+
+.user {
+	width: 20px;
+}
