@@ -1,8 +1,8 @@
 :root {
-    --primary-color : ;
+    --primary-color :rgb(54, 8, 144) ;
 	 --primary-gradient: linear-gradient(rgb(143, 200, 181), rgb(217, 207, 249));
-    --primary-bg : ;
-    --font-family-size : ;
+    --primary-bg: rgb(107, 182, 146);
+    --font-family-primary: Roboto, sans-serif ;
     --font-size-XL: 3rem ;
 	 --font-size-L: 2rem ;
 	 --font-size-M: 1rem ;

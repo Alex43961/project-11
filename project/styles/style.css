@@ -24,19 +24,14 @@ li {
 	padding-left: 100px;
 }
 
-
-/* скрываем чекбокс */
 #menu__toggle {
 	opacity: 0;
 }
 
-/* стилизуем кнопку */
 .menu__btn {
 	display: flex;
-	/* используем flex для центрирования содержимого */
 	align-items: center;
-	/* центрируем содержимое кнопки */
-	position: fixed;
+	position: absolute;
 	top: 35px;
 	left: 20px;
 	width: 26px;
@@ -45,7 +40,6 @@ li {
 	z-index: 1;
 }
 
-/* добавляем "гамбургер" */
 .menu__btn>span,
 .menu__btn>span::before,
 .menu__btn>span::after {
@@ -66,7 +60,6 @@ li {
 	top: 8px;
 }
 
-/* контейнер меню */
 .items {
 	display: block;
 	position: fixed;
@@ -83,12 +76,11 @@ li {
 	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
 }
 
-/* элементы меню */
 .menu__item {
 	display: block;
 	padding: 30px 24px;
 	color: #333;
-	font-family: 'Roboto', sans-serif;
+	font-family: var(--font-family-primary);
 	font-size: 20px;
 	font-weight: 600;
 	text-decoration: none;
@@ -138,6 +130,7 @@ li {
 .title {
 	font-size: var(--font-size-L);
 	text-transform: uppercase;
+	color: var(--primary-color);
 }
 
 .catalog-btn {
@@ -190,4 +183,16 @@ li {
 
 p {
 	text-align: center;
+	font-family: var(--font-family-primary);
+	font-size: var(--font-size-m);
+	color: var(--primary-color);
+}
+
+.footer {
+	height: 80px;
+	background-color: var(--primary-bg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
 }
